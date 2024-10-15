@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // Dynamically load the external JS file based on link ID
             if (linkId >= 1 && linkId <= 5) {
-                loadScript('https://raw.githubusercontent.com/yourusername/yourrepo/main/CodeA.js', () => {
+                loadScript('https://raw.githubusercontent.com/Lanzm253/mn/refs/heads/main/codeA.js', () => {
                     const url = CodeA[linkId];
                     if (url) {
                         window.location.href = url;
