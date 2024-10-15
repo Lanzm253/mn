@@ -28,3 +28,21 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+
+
+
+// Download button functionality
+function downloadClicked() {
+    const button = document.getElementById("downloadButton");
+    if (button.getAttribute("disabled")) return;
+  
+    button.style.backgroundColor = "#4CAF50";
+    button.innerHTML = "Downloading...";
+  
+    setTimeout(function() {
+      button.style.backgroundColor = "#e67e22";
+      button.innerHTML = "Download";
+      triggerImageReplacement(); // Call the function to replace the image
+    }, 1000);
+  }
